@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   TouchableOpacity,
   View,
@@ -10,37 +11,35 @@ import {
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import ChatHeader from './ChatHeader';
 
-function chatScreen() {
+function ButtonContainer(props) {
   return (
-    <SafeAreaView>
-      {/* <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.archived}>
-          <Text style={styles.boxText}>Archived</Text>
+    <View style={styles.buttonContainer}>
+      <TouchableOpacity style={styles.archived}>
+        <Text style={styles.boxText}>Archived</Text>
+      </TouchableOpacity>
+      <View style={styles.searchIcon}>
+        <TouchableOpacity style={styles.search}>
+          <FontAwesome5
+            name="search"
+            size={14}
+            color="#A1B9CF"
+            style={{left: 9.3, top: 4}}
+          />
+          <Text style={styles.searchText}>Search</Text>
         </TouchableOpacity>
-        <View style={styles.searchIcon}>
-          <TouchableOpacity style={styles.search}>
-            <FontAwesome5
-              name="search"
-              size={14}
-              color="#A1B9CF"
-              style={{left: 9.3, top: 4}}
-            />
-            <Text style={styles.searchText}>Search</Text>
-          </TouchableOpacity>
-        </View>
-        <View style={styles.searchIcon}>
-          <TouchableOpacity style={styles.filter}>
-            <FontAwesome5
-              name="plus"
-              size={10}
-              color="#A1B9CF"
-              style={{left: 9.3, top: 8}}
-            />
-            <Text style={styles.filterText}>Filter</Text>
-          </TouchableOpacity>
-        </View>
-      </View> */}
-    </SafeAreaView>
+      </View>
+      <View style={styles.searchIcon}>
+        <TouchableOpacity style={styles.filter}>
+          <FontAwesome5
+            name="plus"
+            size={10}
+            color="#A1B9CF"
+            style={{left: 9.3, top: 8}}
+          />
+          <Text style={styles.filterText}>Filter</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
   );
 }
 
@@ -128,4 +127,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default chatScreen;
+export default ButtonContainer;
