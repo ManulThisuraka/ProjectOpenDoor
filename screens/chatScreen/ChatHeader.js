@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 40,
-    fontFamily: 'Arimo',
+    fontFamily: 'Poppins-Bold',
     position: 'absolute',
     left: 16,
     top: 51,

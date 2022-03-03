@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
   boxText: {
     fontSize: 15,
     color: '#A1B9CF',
-    fontFamily: 'Arimo',
+    fontFamily: 'Poppins-Regular',
     paddingTop: 3.5,
     alignSelf: 'center',
     opacity: 1,
@@ -110,8 +110,8 @@ const styles = StyleSheet.create({
   searchText: {
     fontSize: 15,
     color: '#A1B9CF',
-    fontFamily: 'Arimo',
-    paddingTop: 3.5,
+    fontFamily: 'Poppins-Regular',
+    paddingTop: 2.5,
     alignSelf: 'center',
     position: 'absolute',
     paddingLeft: 20,
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   filterText: {
     fontSize: 15,
     color: '#A1B9CF',
-    fontFamily: 'Arimo',
+    fontFamily: 'Poppins-Regular',
     paddingTop: 3.5,
     alignSelf: 'center',
     position: 'absolute',
